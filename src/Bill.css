@@ -1,0 +1,61 @@
+.bill {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  width: 400px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: black 1px solid;
+  padding: 20px;
+}
+.bill_right {
+  font-family: "Courier New", Courier, monospace;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.bill_left {
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.bill_total {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.button {
+  border: none;
+  background-color: #16b510;
+  color: #16b510;
+  height: fit-content;
+  width: 450px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+}
+.button_save {
+  background-color: #16b510;
+  width: 40%;
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  color: white;
+}
+
+.button_charge {
+  background-color: #16b510;
+  width: 40%;
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  color: white;
+}
