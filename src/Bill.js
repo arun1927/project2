@@ -19,7 +19,7 @@ function Bill(props) {
     let final = 0;
     let tax = 6.25;
     props.cart.forEach((i) => {
-      final = final + Number(i.price) + tax;
+      final = final + Number(i.price*i.qty) + tax;
     });
     setTotal(final);
   }, [props]);
@@ -36,7 +36,7 @@ function Bill(props) {
             return (
               <div className="bill">
                 <div className="bill_right">
-                  <h5> {item?.title} x 1</h5>
+                  <h5> {item?.title} x {item.qty}</h5>
                 </div>
 
                 <div className="bill_left">

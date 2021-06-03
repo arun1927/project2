@@ -11,6 +11,17 @@ import Bill from "./Bill";
 function App() {
   const [cart, setCart] = useState([]);
   const selectFuntion = (item) => {
+    let find = cart.find((i)=>{
+      return  i.id == item.id
+    })
+
+    if(find){
+      find.qty=find.qty+1
+      let findIndex = cart.indexOf(find)
+      let duplicate = [...cart]
+      duplicate[findIndex] = find
+     return setCart([...duplicate])
+    }
     setCart([...cart, item]);
   };
   return (
