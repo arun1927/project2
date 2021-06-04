@@ -15,6 +15,7 @@
   margin: 20px;
   margin-top: 18px;
   padding: 10px;
+  padding-right: 0%;
   align-items: center;
 }
 .header_search {
@@ -25,7 +26,7 @@
 }
 .header_searchInput {
   height: 12px;
-  border: none;
+  margin-top: 6px;
   background-color: #16b510;
   width: 100%;
   padding: 10px;
@@ -33,6 +34,7 @@
 
 .header_searchIcon {
   padding: 5px;
+  margin-top: 6px;
   height: 22px !important;
   color: white;
 }

@@ -5,13 +5,29 @@ import { PDFExport, savePDF } from "@progress/kendo-react-pdf";
 
 function Bill(props) {
   const [total, setTotal] = useState(0);
+  const [quantity, setQuantity] = useState(0);
+  let time = new Date().toLocaleTimeString();
+  let date =
+    new Date().getDate() +
+    "/" +
+    new Date().getMonth() +
+    "/" +
+    new Date().getFullYear();
+  const [ctime, setCtime] = useState(time);
   const pdfExportComponent = React.useRef(null);
+
+  const UpdateTime = () => {
+    let time = new Date().toLocaleTimeString();
+    setCtime(time);
+  };
+  setInterval(UpdateTime, 1000);
 
   const exportPDFWithComponent = () => {
     if (pdfExportComponent.current) {
       pdfExportComponent.current.save();
     }
   };
+
   const refresh = () => {
     window.location.reload();
   };
@@ -19,9 +35,17 @@ function Bill(props) {
     let final = 0;
     let tax = 6.25;
     props.cart.forEach((i) => {
-      final = final + Number(i.price) + tax;
+      final = final + Number(i.price * i.qty) + tax;
     });
     setTotal(final);
+  }, [props]);
+  useEffect(() => {
+    let count = 0;
+
+    props.cart.forEach((i) => {
+      count = count + 1;
+    });
+    setQuantity(count);
   }, [props]);
   return (
     <>
@@ -31,12 +55,25 @@ function Bill(props) {
         margin={40}
         fileName={`Bill for ${new Date().getFullYear()}`}
       >
+        <div className="bill">
+          <div className="bill_right">
+            <h5> TIME : {ctime} </h5>
+          </div>
+
+          <div className="bill_left">
+            <h5> DATE :{date} </h5>
+          </div>
+        </div>
+
         <>
           {props?.cart?.map((item, index) => {
             return (
               <div className="bill">
                 <div className="bill_right">
-                  <h5> {item?.title} x 1</h5>
+                  <h5>
+                    {" "}
+                    {item?.title} x {item.qty}
+                  </h5>
                 </div>
 
                 <div className="bill_left">
@@ -45,6 +82,13 @@ function Bill(props) {
               </div>
             );
           })}
+
+          <div className="bill">
+            <div className="bill_left">
+              <h5> NO.of.items :{quantity} </h5>
+            </div>
+          </div>
+
           <div className="bill">
             <div className="bill_left">
               <h2> TAX </h2>

@@ -4,7 +4,7 @@
     "title": "Cake",
     "image": "https://sugargeekshow.com/wp-content/uploads/2019/07/fresh-strawberry-cake-5-500x500.jpg",
     "price": 300,
-    "qty": 0
+    "qty": 1
   },
 
   {
@@ -12,7 +12,7 @@
     "title": "Green Apple",
     "image": "https://tiimg.tistatic.com/fp/1/006/075/green-apple-637.jpg",
     "price": 50,
-    "qty": 0
+    "qty": 1
   },
 
   {
@@ -20,7 +20,7 @@
     "title": "Strwberry Cake",
     "image": "https://sugargeekshow.com/wp-content/uploads/2019/07/fresh-strawberry-cake-5-500x500.jpg",
     "price": 350,
-    "qty": 0
+    "qty": 1
   },
 
   {
@@ -28,7 +28,7 @@
     "title": "Latte",
     "image": "https://www.torani.com/sites/default/files/styles/torani_syrup_recipe_detail/public/recipes/illustration/90_flavored_lattes_11862.jpg?itok=9k-ElPPQ",
     "price": 70,
-    "qty": 0
+    "qty": 1
   },
 
   {
@@ -36,7 +36,7 @@
     "title": "CheeseShake",
     "image": "https://sugargeekshow.com/wp-content/uploads/2019/07/fresh-strawberry-cake-5-500x500.jpg",
     "price": 80,
-    "qty": 0
+    "qty": 1
   },
 
   {
@@ -44,14 +44,14 @@
     "title": "Sweets",
     "image": "https://cdn.dribbble.com/users/1518883/screenshots/5859594/thirtylogos-11---sweets_1x.png",
     "price": 370,
-    "qty": 0
+    "qty": 1
   },
   {
     "id": 7,
     "title": "Strawberry Dessert",
     "image": "https://rakskitchen.net/wp-content/uploads/2020/04/strawberry-cream-Indian.jpg",
     "price": 470,
-    "qty": 0
+    "qty": 1
   },
 
   {
@@ -59,14 +59,14 @@
     "title": "Fruit Salad",
     "image": "https://cdn.healthyrecipes101.com/wp-content/uploads/2019/11/How-long-will-a-fruit-salad-last-in-the-fridge-500x500.jpg",
     "price": 190,
-    "qty": 0
+    "qty": 1
   },
   {
     "id": 9,
     "title": "Corrossiant",
     "image": "https://s3.amazonaws.com/finecooking.s3.tauntonclud.com/app/uploads/2017/04/18133547/051097061-01-croissants-main.jpg",
     "price": 100,
-    "qty": 0
+    "qty": 1
   },
 
   {
@@ -74,14 +74,14 @@
     "title": "Choclate eggler Dessert",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrTmOVPtMSRNZCo4IwZ82dBzdU2A1XhlTHHw&usqp=CAU",
     "price": 610,
-    "qty": 0
+    "qty": 1
   },
   {
     "id": 11,
     "title": "Icecream sandwich",
     "image": "https://makeyourmeals.com/wp-content/uploads/2018/06/ice-cream-sandwiches-320x240.jpg",
     "price": 200,
-    "qty": 0
+    "qty": 1
   },
 
   {
@@ -89,14 +89,14 @@
     "title": "Juice",
     "image": "https://149473553.v2.pressablecdn.com/wp-content/uploads/2020/05/Cool-Drinks-Soft-Drinks-Juice-copy.png",
     "price": 300,
-    "qty": 0
+    "qty": 1
   },
   {
     "id": 13,
     "title": "Cappucine",
     "image": "https://www.caffesociety.co.uk/assets/recipe-images/cappuccino-small.jpg",
     "price": 180,
-    "qty": 0
+    "qty": 1
   },
 
   {
@@ -104,14 +104,14 @@
     "title": "Choclate Dessert",
     "image": "https://static.fanpage.it/wp-content/uploads/sites/22/2020/05/Cake23-638x425.jpg",
     "price": 250,
-    "qty": 0
+    "qty": 1
   },
   {
     "id": 15,
     "title": "Cake with Strawberry",
     "image": "https://sugargeekshow.com/wp-content/uploads/2019/07/fresh-strawberry-cake-5-500x500.jpg",
     "price": 280,
-    "qty": 0
+    "qty": 1
   },
 
   {
@@ -119,7 +119,7 @@
     "title": "Discount",
     "image": "https://img.freepik.com/free-vector/sales-banner-template_1176-108.jpg?size=338&ext=jpg",
     "price": 10,
-    "qty": 0
+    "qty": 1
   },
 
   {
@@ -127,7 +127,7 @@
     "title": "Cookies",
     "image": "https://www.ndtv.com/cooks/images/fruit-yogurt_med.jpg",
     "price": 30,
-    "qty": 0
+    "qty": 1
   },
 
   {
@@ -135,14 +135,14 @@
     "title": "Fancy Cake",
     "image": "https://static.fanpage.it/wp-content/uploads/sites/22/2020/05/Cake23-638x425.jpg",
     "price": 600,
-    "qty": 0
+    "qty": 1
   },
   {
     "id": 19,
     "title": "Strawberry Dessert",
     "image": "https://rakskitchen.net/wp-content/uploads/2020/04/strawberry-cream-Indian.jpg",
     "price": 590,
-    "qty": 0
+    "qty": 1
   },
 
   {
@@ -150,6 +150,6 @@
     "title": "FruitYoghurt",
     "image": "https://www.ndtv.com/cooks/images/fruit-yogurt_med.jpg",
     "price": 160,
-    "qty": 0
+    "qty": 1
   }
 ]
