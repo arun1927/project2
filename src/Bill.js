@@ -6,6 +6,8 @@ import { PDFExport, savePDF } from "@progress/kendo-react-pdf";
 function Bill(props) {
   const [total, setTotal] = useState(0);
   const [quantity, setQuantity] = useState(0);
+  const [Num, setNum] = useState(0);
+  const [itotal, setItotal] = useState(0);
   let time = new Date().toLocaleTimeString();
   let date =
     new Date().getDate() +
@@ -39,6 +41,16 @@ function Bill(props) {
     });
     setTotal(final);
   }, [props]);
+
+  useEffect(() => {
+    let ifinal = 0;
+
+    props.cart.forEach((i) => {
+      ifinal = ifinal + Number(i.price * i.qty);
+    });
+    setItotal(ifinal);
+  }, [props]);
+
   useEffect(() => {
     let count = 0;
 
@@ -46,6 +58,13 @@ function Bill(props) {
       count = count + 1;
     });
     setQuantity(count);
+  }, [props]);
+  useEffect(() => {
+    let all = 0;
+    props.cart.forEach((i) => {
+      all = all + i.qty;
+    });
+    setNum(all);
   }, [props]);
   return (
     <>
@@ -77,7 +96,7 @@ function Bill(props) {
                 </div>
 
                 <div className="bill_left">
-                  <h5> {item?.price} </h5>
+                  <h5> ₹ {item?.price} </h5>
                 </div>
               </div>
             );
@@ -85,7 +104,13 @@ function Bill(props) {
 
           <div className="bill">
             <div className="bill_left">
-              <h5> NO.of.items :{quantity} </h5>
+              <h5>
+                {" "}
+                NO.of.items / No.of.quantity {quantity} / {Num}{" "}
+              </h5>
+            </div>
+            <div className="bill_right">
+              <h4> ₹ {itotal} </h4>
             </div>
           </div>
 
@@ -95,7 +120,7 @@ function Bill(props) {
             </div>
 
             <div className="bill_right">
-              <h2> 6.25 </h2>
+              <h2> ₹ 6.25 </h2>
             </div>
           </div>
           <div className="bill">
@@ -104,7 +129,7 @@ function Bill(props) {
             </div>
 
             <div className="bill_right">
-              <h2> {total} </h2>
+              <h2> ₹ {total} </h2>
             </div>
           </div>
         </>
