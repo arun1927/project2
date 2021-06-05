@@ -117,7 +117,7 @@ function Bill(props) {
                 </div>
 
                 <div className="bill_left">
-                  <h5> ₹ {item?.price} </h5>
+                  <h5> Rs. {item?.price} </h5>
                 </div>
               </div>
             );
@@ -131,7 +131,7 @@ function Bill(props) {
               </h5>
             </div>
             <div className="bill_right">
-              <h4> ₹ {itotal} </h4>
+              <h4> Rs. {itotal} </h4>
             </div>
           </div>
 
@@ -141,7 +141,7 @@ function Bill(props) {
             </div>
 
             <div className="bill_right">
-              <h2> ₹ 6.25 </h2>
+              <h2> Rs. 6.25 </h2>
             </div>
           </div>
           <div className="bill">
@@ -150,7 +150,7 @@ function Bill(props) {
             </div>
 
             <div className="bill_right">
-              <h2> ₹ {total} </h2>
+              <h2> Rs. {total} </h2>
             </div>
           </div>
         </>
