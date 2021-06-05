@@ -13,14 +13,16 @@ function App() {
     let find = cart.find((i) => {
       return i.id == item.id;
     });
-
+    // condition to check repeated id
     if (find) {
       find.qty = find.qty + 1;
       let findIndex = cart.indexOf(find);
       let duplicate = [...cart];
+      // duplicate id name if id == prvious id
       duplicate[findIndex] = find;
       return setCart([...duplicate]);
     }
+    // passing props into cart bill.js
     setCart([...cart, item]);
   };
   return (

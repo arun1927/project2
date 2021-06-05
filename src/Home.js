@@ -14,6 +14,8 @@ function Home(props) {
   };
   const [search, setSearch] = useState("");
   const [filteredData, setFilteredData] = useState([]);
+
+  //name filter
   useEffect(() => {
     setFilteredData(
       Data.filter((post) => {
@@ -26,12 +28,8 @@ function Home(props) {
     <>
       <div className="header">
         <Link to="/">
-          <div className="header_optionBasket">
+          <div className="header_option">
             <MenuIcon />
-            <span
-              className="header_optionLineTwo
-        header_basketCount"
-            ></span>
           </div>
         </Link>
 
@@ -42,6 +40,7 @@ function Home(props) {
         />
         <SearchIcon className="header_searchIcon" />
       </div>
+
       <div className="home">
         {filteredData.map((post) => {
           return (
